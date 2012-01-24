@@ -1,9 +1,7 @@
-require 'minitest/unit'
+require 'test/unit'
 require 'woothee/dataset'
 
-MiniTest::Unit.autorun
-
-class TestWootheeDataSet < MiniTest::Unit::TestCase
+class TestWootheeDataSet < Test::Unit::TestCase
   def test_const
     assert_equal 'name', Woothee::DataSet.const('ATTRIBUTE_NAME')
   end
